@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+   
+    <head>   
+
+        <title>Home Page</title>
+
+        <link rel="icon" href="page_blank.png" type="image/x-icon">
+
+        <style type="text/css">
+           *{
+               font-family: "Swipe Race";
+               margin: 0;
+               padding: 0%;
+               
+           }
+
+           marquee{
+               font-family: "Benguiat";
+               background-color: black;
+               color: aliceblue;
+           }
+           
+           .sidemenu{
+               position: fixed;
+               top: 20px;
+               left: 0px;
+               width: 0%;
+               height: 100%;
+               background-color: rgb(17, 16, 16);
+               z-index: 1;
+               padding-top: 100px;
+               overflow-x:hidden;
+               transition: all .5s;
+               line-height: 55px;
+               box-shadow: 1px 3px 15px 2px #000;
+           }
+
+           .sidemenu .aa a{
+               padding: 8px 8px 8px 64px;
+               font-size: 20px;
+               color:#999;
+               display: block;
+               margin-top: 50px;
+               margin-bottom: 50px;
+               text-decoration: none;
+               border-left: 5px solid transparent;
+               
+           }
+
+            .sidemenu .bb{
+               position: absolute;
+               top: 8%;
+               left: 15px;
+           }
+
+            .sidemenu .bb img{
+               border-radius: 50%;
+               margin-left: 155px;
+           }
+
+         
+           .sidemenu a{
+               font-size: 25px;
+               transform: translateX(15px);
+               color:#999;
+               display: block;
+               margin-bottom: 50px;
+               text-decoration: none;
+           }
+
+           .sidemenu a:hover{
+               color: #fff;
+               transition: 0.3s ease;
+           }
+
+           .sidemenu .aa a:hover{
+               color: #fff;
+               background-color:rgba(0, 0, 0, 0.13) ;
+               border-left: 5px solid tomato;
+               transition: 0.3s ease ;
+           }
+
+           .sidemenu .close-btn{
+               position: absolute;
+               top: 10px;
+               right: 25px;
+               font-size: 36px;
+               margin-left: 32px;
+           }
+           #option{
+               color: #fff ;
+               position: fixed;
+               left: 20px;
+               font-size: 35px;
+               cursor: pointer;
+               transition: all 0.6s;
+           }
+
+        </style>
+     
+    </head>
+
+   
+    
+    <body>
+        <marquee scrollamount="10"; >
+            Name - Sumant Dusane 
+        </marquee>
+
+        <body background="F:\Sumant\Doc\Html\Sumant Resume\wing 3.jpg">
+        
+
+        <div id="option" onclick="openFunction()">&#9776</div>
+        <div id="menu" class="sidemenu">
+           
+        <div class="bb">
+            
+                <a href="IMG_8313.jpg" target="_blank">
+                    <img alt="Profile picture" src="IMG_8313.jpg"
+                    width="80" height="80" border-radius="50%">
+                 </a>
+    
+        </div>
+
+          <div class="aa">
+            <a href="computer resume.html" target="_blank">Resume (Computer Engineer)</a>
+            <a href="graphic resume.html"target="_blank">Resume (Graphic Designer)</a>
+            <a href="acheivement.html">Acheivements</a>
+            <a href="download.html">Downloads</a>
+            <a href="contact1.html">Contact</a>
+          </div>
+
+            <a href="#" style="padding: 8px 8px 8px 8px;" class="close-btn" onclick="closeFunction()">&times;</a>
+
+        </div>
+
+        <script type="text/javascript">
+            function openFunction(){
+                document.getElementById("menu").style.width="400px";
+                document.getElementById("option").style.marginLeft="-20px";
+         
+            }
+            function closeFunction(){
+                document.getElementById("menu").style.width="0px";
+                document.getElementById("option").style.marginLeft="0px";
+               
+            }
+        </script>
+        
+
+    </body>
+    
+</html>

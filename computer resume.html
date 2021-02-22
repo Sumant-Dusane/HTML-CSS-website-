@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>CV</title>
+        <link rel="icon" href="laptop.png" type="image/x-icon">
+
+
+        <style>
+            *{
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            body{
+                background-repeat: no-repeat;
+               
+            }
+
+            .next a img{
+                position: absolute;
+                right: 70px;
+                top: 50%;
+                box-shadow: 10px 7px 8px 2px #000;
+            }
+
+            .next a img:hover{
+                transform: scale(1.5);
+                transition: 0.2s ease;
+                box-shadow: 5px 5px 5px 3px #000;
+            }
+
+            .next h2{
+                position: absolute;
+                right:15px;
+                top:65%;
+                color: #fff;
+                font-size: 20px;
+                font-family: "Azonix";
+                text-shadow: 3px 2px 5px #000;
+            }
+
+            .home a img{
+                position: absolute;
+                top: 15px;
+                left: 40px;
+            }
+
+            .home a img:hover{
+                transform: rotate(90deg);
+                transition: 0.2s ease-in-out;
+            }
+
+            .home h3{
+                position: absolute;
+                text-decoration: underline;
+                color: #fff;
+                top: 50px;
+                left: 30px;
+            }
+           
+            .pddf{
+                position: absolute;
+                left: 35%;
+                top: 10%;
+                box-shadow: 8px 8px 15px #000; 
+                display: none; 
+            }
+            
+            .openn2{
+                position: absolute;
+                left: 66%; 
+                bottom: 5%;
+                display: none;
+                cursor: pointer;
+                z-index: 5;               
+            }
+
+
+            .pddf2{
+                position: absolute;
+                left: 35%;
+                top: 10%;
+                display: none;
+              
+            }
+
+
+            .openn{
+                position: absolute;
+                left: 10%;
+                top: 15%;
+                cursor: pointer;
+            }
+
+            .openn p{
+                color: #fff;
+            }
+           
+           .aaaa{
+               text-align: center;
+               color: #fff;
+               font-size: 15px;
+               display: none;
+           }
+
+        </style>
+
+        
+
+    </head>
+
+    <body>
+
+        <body background="black board.jpg">
+
+
+        <div id="pdf" class="pddf">
+            <img src="Sumant CV-1.jpg" width="500" height="650">
+        </div>
+
+        <div id="open" onclick="myFunction()" class="openn">
+            <img src="file white.png" width="100" height="100" >
+            <p>Click on the icon to Open</p>
+        </div>
+
+        <div id="open2" onclick="myFunction2()" ondblclick="myFunction3()" class="openn2">
+            <img src="3d arrow.png" width="30" height="30">        
+        </div>
+
+        <div id="pdf2" class="pddf2">
+            <img src="Sumant CV-2.jpg" width="500" height="650">
+        </div>
+
+        <div id="aaa" class="aaaa">
+            <h3>
+               This pdf has two pages single click ont the arrow to go to 2nd page and double click on arrow button to go to 1st page
+            </h3>
+        </div>   
+
+        <div class="next">
+            <a href="graphic resume.html">
+                <img src="arrow.png" width="100" height="100" >
+            </a>
+            <h2>Graphic Design Resume</h2>
+        </div>
+
+        <div class="home">
+            <a href="index.html">
+                <img src="house white.png" width="50" height="50">
+            </a>
+            <h3>Go Back Home</h3>
+        </div>
+
+    </body>
+
+    <script type="text/javascript">
+
+        function myFunction()
+        {   
+            if(document.getElementById("pdf").style.display =='none')
+            {
+                document.getElementById("pdf").style.display ='block';
+                document.getElementById("open2").style.display= 'block';
+                document.getElementById("aaa").style.display= 'block';
+                
+                
+            }
+            else
+            {
+                document.getElementById("pdf").style.display='none';
+                document.getElementById("open2").style.display='none';
+                
+            }
+
+        }
+
+        function myFunction2()
+        {
+            document.getElementById("pdf2").style.display = 'block';
+            document.getElementById("open2").style.transform='scale(1)';
+        }
+
+        function myFunction3()
+        {
+            document.getElementById("pdf2").style.display='none';
+            document.getElementById("open2").style.transform='scale(-1)';
+        }
+        
+     </script>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Education Qualification</title>
+        <link rel="icon" href="education.png" type="image/x-icon">
+
+        <style>
+            *{
+                padding: 0%;
+                font-family: 'Times New Roman', Times, serif;
+            }  
+
+            body{
+                background-repeat: no-repeat;
+                
+            }   
+
+            .home a img{
+                position: absolute;
+                top: 15px;
+                left: 40px;
+            }
+
+            .home a img:hover{
+                transform: rotate(90deg);
+                transition: 0.2s ease-in-out;
+            }
+
+            .home h3{
+                position: absolute;
+                text-decoration: underline;
+                color: #fff;
+                top: 50px;
+                left: 30px;
+            }
+            
+            .next a img{
+                position: absolute;
+                right: 70px;
+                top: 50%;
+                box-shadow: 10px 7px 15px 0.1px #000;
+            }
+
+            .next a img:hover{
+                transform: scale(1.5);
+                transition: 0.2s ease;
+                box-shadow: 1px 7px 5px 1px #000;
+            }
+
+            .next h2{
+                position: absolute;
+                right:15px;
+                top:65%;
+                font-family: "Azonix";
+                color: aliceblue;
+                text-shadow: 3px 3px 4px #000;
+            }
+
+            .back a img{
+                position: absolute;
+                top: 50%;
+                left: 70px;
+                box-shadow: 10px 7px 15px 0.1px #000;
+            }
+
+            .back a img:hover{
+                transform: scale(1.5);
+                transition: 0.2s ease;
+                box-shadow: 1px 7px 5px 1px #000;
+            }
+
+            .back h2{
+                position: absolute;
+                left:15px;
+                top:65%;
+                font-family: "Azonix";
+                font-size: 20px;
+                color: aliceblue;
+                text-shadow: 3px 3px 4px #000;
+            }
+
+            .pddf{
+                position: absolute;
+                left: 35%;
+                top: 10%;
+                display: none;
+                box-shadow: 8px 8px 15px #000; 
+            }
+            
+            .openn{
+                position: absolute;
+                left: 10%;
+                top: 15%;
+                cursor: pointer;
+            }
+
+            .openn p{
+                color: #fff;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <body background="black board.jpg">
+            
+            <div id="pdf" class="pddf">
+                <img src="Sumant Resume-1.jpg" width="500" height="650">
+            </div>
+    
+            <div id="open" onclick="myFunction()" class="openn">
+                <img src="file white.png" width="100" height="100" >
+                <p>Click on the icon to Open</p>
+            </div>    
+
+        <div class="home">
+            <a href="index.html">
+                <img src="house white.png" width="50" height="50">
+            </a>
+            <h3>Go Back Home</h3>
+        </div>
+
+        <div class="next">
+            <a href="acheivement.html">
+                <img src="arrow.png" width="100" height="100" >
+            </a>
+            <h2>Acheivement</h2>
+        </div>
+
+        <div class="back">
+            <a href="computer resume.html">
+                <img src="arrow flipped.png" width="100" height="100" >
+            </a>
+            <h2>Computer Engineering <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Resume</h2>
+        </div>
+
+    </body>
+
+    <script>
+        function myFunction()
+        {
+            if(document.getElementById("pdf").style.display =='none')
+            {
+                document.getElementById("pdf").style.display ='block';
+
+            }
+            else
+            {
+                document.getElementById("pdf").style.display='none';
+                
+            }
+
+        }
+
+    </script>
+</html>
